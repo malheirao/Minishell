@@ -6,7 +6,7 @@ LIBFT = $(LIBFT_DIR)/libft.a
 LIBS = -lreadline -L$(LIBFT_DIR) -lft
 INCLUDES = -I include -I $(LIBFT_DIR)
 
-SRC = src/main.c src/execution.c src/parsing.c
+SRC = src/main.c src/execution.c src/parsing/syntax_check.c src/utils.c
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

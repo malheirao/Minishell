@@ -20,6 +20,12 @@ typedef struct s_command
 int         check_syntax(char **tokens);
 void        print_syntax_error(char *token);
 
+// Token Utils
+int         is_separator(char c);
+void        skip_word(char *input, int *i);
+int         count_tokens(char *input);
+void        free_tokens(char **tokens);
+
 // Utils
 int         ft_isspace(char c);
 

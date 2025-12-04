@@ -9,7 +9,7 @@ int main(void)
         input = readline("minishell> ");
         if (input == NULL)
         {
-            printf("exit\n");
+            ft_printf("exit\n");
             break;
         }
         if (*input)
